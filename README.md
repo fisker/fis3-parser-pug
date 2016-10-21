@@ -20,7 +20,7 @@ var pugConf = {
   .. more
 }; 
 
-fis.match('*.html', {
+fis.match('*.{pug,jade}', {
   parser: fis.plugin('pug', pugConf);
 });
 ```

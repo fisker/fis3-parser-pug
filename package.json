@@ -1,6 +1,6 @@
 {
   "name": "fis3-parser-pug",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a fis plugin to parse pug(aka jade).",
   "main": "index.js",
   "repository": {
