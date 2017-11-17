@@ -3,18 +3,14 @@
  * fisker Cheung<lionkay@gmail.com>
  */
 
-var pugRender = require('pug').render;
-var log = (global.fis && fis.log) || console;
+var render = require('pug').render
+var log = global.fis.log
 
-module.exports = function(content, file, conf){
-  if (!content) {
-    return;
-  }
-
-  return pugRender(content, conf);
-};
+module.exports = function(content, file, conf) {
+  return content ? render(content, conf) : ''
+}
 
 module.exports.defaultOptions = {
   pretty: '  ',
   doctype: 'html'
-};
+}

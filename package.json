@@ -1,6 +1,6 @@
 {
   "name": "fis3-parser-pug",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "a fis plugin to parse pug(aka jade).",
   "main": "index.js",
   "repository": {
@@ -19,8 +19,16 @@
   "author": "fisker Cheung <lionkay@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "pug": "^2.0.0-beta6"
+    "pug": "^2.0.0-rc.4"
   },
+  "scripts": {
+    "release": "npm --registry=https://registry.npmjs.org/ publish"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
   "bugs": {
     "url": "https://github.com/fisker/fis3-parser-pug/issues"
   },
